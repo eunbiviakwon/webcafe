@@ -13,7 +13,7 @@ a{
     color: inherit;
 }
 /* 숨김콘텐츠 */
-.ally-hidden{
+.ally-hidden, legend{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -32,6 +32,7 @@ body{
     font-family: 'Spoqa Han Sans', 'sans-serif';
     line-height: 1.15;
     font-weight: 400;
+    background: grey;
 }
 .header, .visual, .main-content, .slogan, .footer{
     margin: 0 auto;
@@ -226,14 +227,14 @@ body{
 }
 .main-content{
     min-height: 400px;
-    background-color: skyblue;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 30px;
 }
 .group{
-    background-color: yellow;
+    /* background-color: yellow; */
 
 }
 .group1{
@@ -241,17 +242,112 @@ body{
     /* flex-grow: 2;
     flex-shrink: 1;
     flex: 50px 2 1;*/
-    background-color: orange; 
+    /* background-color: orange;  */
 }
 .group2{
     flex-basis: 380px;
     /* flex-grow: 1; */
-    background-color: lime; 
+    /* background-color: lime;  */
 }
 .group3{
     flex-basis: 190px;
     /* flex-grow: 2; */
 }
+
+
+.login{
+    background: #fc7a2f radial-gradient(circle at right top, #f7a82a, #fc7a2f) ;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 0 0 #666;
+}
+.login-heading{
+    margin: 0;
+    text-indent: 10px;
+    font-size: 1.5rem;
+    color: #ff0;
+}
+.login-form{
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+    padding: 10px 10px 0px 10px;
+}
+.login-form fieldset{
+    border: 0;
+    padding: 0 0 10px 0;
+    position: relative;
+    border-bottom: 1px solid #aaa;
+
+}
+.login-form label{
+    width: 4em;
+    display: inline-block;
+}
+.login-form input{
+    width: 90px;
+    height: 22px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 5px;
+}
+.user-pw{
+    margin-top: 6px;
+}
+.btn-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fc7a2f;
+    background: #f7a82a;
+    padding: 0;
+    color: #fff;
+    border-radius: 3px;
+}
+.sign{
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.sign li{
+    font-size: 1.3rem;
+}
+.sign li::before{
+    color: #fc7a2f;
+}
+/*
+.login-heading{
+    color: yellow;
+    font-size: 1.5rem;
+}
+.login-form{
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    margin: 10px;
+}
+.sign{
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    margin: 10px 10px;
+} */
+/* #user-email{
+    width: 100px;
+}
+#user-pw{
+    width: 100px;
+}
+.btn-login{
+    background-color: #fc7a2f;
+    color: #fff;
+} */
 .slogan{
     background-color: orange;
     padding: 15px 0;

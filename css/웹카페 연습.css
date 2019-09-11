@@ -134,6 +134,7 @@ body{
     padding-left: 0;
     list-style: none;
     margin: 0;
+    background-color: yellow;
     position: absolute;
     display: none;
     white-space: nowrap;
@@ -218,6 +219,7 @@ body{
 }
 .visual-text{
     position: absolute;
+    background-color: yellow;
     animation-name: textAni;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -232,6 +234,7 @@ body{
     padding: 30px;
 }
 .group{
+    /* background-color: yellow; */
 
 }
 .group1{
@@ -318,236 +321,21 @@ body{
 .sign li::before{
     color: #fc7a2f;
 }
-/* .validation-list{
-    padding: 0; */
-
-/* .validation-list li:first-child{
-    
-    display: inline-block;
-    width: 250px;
-    height: 20px;
-    border-radius: 10px;
-    margin:10px 0 10px 0;
-    background-color: gray radial-gradient(circle at right top, gray, #fff) ;
-    
-} 
-
-.validation-list li:last-child{
-    width: 250px;
-    height: 20px;
-    background-color: #666;
-    border-radius: 10px;
-    display: inline-block;
-}
-.validation-list */
-/*
-.login-heading{
-    font-size: 1.5rem;
-}
-.login-form{
-    background-color: #fff;
-    border-radius: 10px 10px 0 0;
-    padding: 10px;
-    margin: 10px;
-}
-.sign{
-    background: #fff;
-    border-radius: 0 0 10px 10px;
-    padding: 10px;
-    margin: 10px 10px;
-} */
-/* #user-email{
-    width: 100px;
-}
-#user-pw{
-    width: 100px;
-}
-.btn-login{
-    background-color: #fc7a2f;
-    color: #fff;
-} */
-
-/* 유효성 검사 배너 */
+/* 유효성 검사 */
 .validation-list{
     list-style: none;
-    padding-left: 0;
-    margin: 25px 0 20px 0;
+    background-color: yellow;
 }
 .validation-list li{
-    margin: 10px 0;
-}
-.validation-list a{
-    background: url('./images/validation_icon.png') no-repeat 20px 50%, linear-gradient(#ccc,#eee) repeat 0 0;
-    display: block;
-    border:1px solid #aaa;
-    border-radius: 30px;
-    padding: 10px 0 10px 45px;
-  
-}
-/* 웹 관련 용어*/
-.term{
-    background: #ccc linear-gradient(#ccc, #eee);
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    padding: 10px 15px;
-}
-.term-heading{
-    margin: 0px;
-    font-size: 1.5rem;
-}
-.term-list{
-    margin: 10px 0 0 0;
-}
-
-/* .odd, .even{
-    margin-top: 15px;
-}
-.odd::after, even::after{
-    content: "";
-    clear: both;
-    display: block;
-}
-  
-.odd .term-list-subject, .odd .term-list-brief{
-    float:right;
-}
-.odd .term-list-thumbnail{
-    float: left;
-}
-.term-list-subject{
-    margin: -2px 0 5px 0;
-}
-.term-list-thumbnail{
-    background: lime;
-    float: left;
-}
-.term-list-thumbnail img{
-    vertical-align: top;
-}
-.term-list-brief{
-    line-height: 1.5; */
-  
-    /* width: 130px; */ 
-
-
-/* .term{
-    background: linear-gradient(#ccc, #eee);
-    border: 1px solid #aaa; 
-    border-radius: 5px;
-}
-.term-heading{
-    font-size: 15px;
-    margin-left: 10px;
-}
-.term-list-subject{
-    color: #296897;
-    display: inline;
-    margin-left: 10px;
     background-color: pink;
 }
-.term-list-thumbnail{
-    margin-left: 10px;
-    float: left;
-    background-color: purple;
-    
-}
-.term-list-brief{
-    margin: 10px 10px 0 80px;
-    background-color: skyblue;
-} */
-.odd, .even{
-    margin-top: 15px;
-  }
-  .odd::after, .even::after{
-    content: "";
-    clear: both;
+.validation-list a{
+    background: linear-gradient(gray, #fff);
     display: block;
-  }
-  .odd .term-list-subject, .odd .term-list-brief{
-    float: right;
-  }
-  .odd .term-list-thumbnail{
-    float: left;
-  }
-  .even .term-list-subject, .even .term-list-brief{
-    float: left;
-  }
-  .even .term-list-thumbnail{
-    float: right;
-  }
-  
-  
-  .term-list-thumbnail, .term-list-brief{
-    margin: 0;
-  }
-  .term-list-subject, .term-list-brief{
-    width: 145px;
-  }
-  .term-list-subject{
-    margin: -2px 0 5px 0;
-  }
-  .term-list-thumbnail img{
-    vertical-align: top;
-  }
-  .term-list-brief{
-    line-height: 1.5;
-  }
+    border-radius: 30px;
 
-  .search-form{
-    background:  #ccc linear-gradient(#ccc, #eee);
-    padding: 15px 25px 10px;
-    border: 1px solid #aaa;
-    border-bottom: 0;
-    border-radius: 15px 15px 0 0;
 }
 
-    .search-form fieldset{
-    border: 0;
-    margin: 0;
-    padding: 0;
-  
-}
-.search-form label, .search-form input, .btn-search{
-    vertical-align: middle;
-}
-input[type="search"]{
-    border: 1px solid #aaa;
-    padding: 1px 1px 1px 5px;
-    width: 200px;
-    border-radius: 3px;
-    height: 24px;
-    margin: 0 2px;
-}
-.btn-search{
-    background: #121212;
-    color: #fff;
-    font: inherit;
-    border: 1px solid #aaa;
-    border-radius: 3px;
-    padding: 0 10px;
-    height: 24px;
-    font-size: 1.3rem;
-}
-    /* 검색폼 */
-/* .search-form{
-    background:  #ccc linear-gradient(#ccc, #eee);
-    border-radius: 10px 10px 0 0;
-    border-style: 1px solid;
-    height: 50px;
-}
-.search-form fieldset{
-    border-style: none;
-    padding: 15px;
-}
-#search{
-    border-radius: 2px;
-    border-style: none;
-}
-.btn-search{
-    background-color: #000;
-    border-radius: 2px;
-    color: #fff;
-} */
 .slogan{
     background-color: orange;
     padding: 15px 0;
@@ -557,4 +345,5 @@ input[type="search"]{
     padding: 15px 0;
 }
 .footer{
+    background-color: yellow;
 }

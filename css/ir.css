@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* padding을 활용한 ir */
+
+.brand1{
+    background: yellow url(./images/title.png) no-repeat;
+    height: 0px;
+    width: 290px;
+    padding-top: 195px;
+    overflow: hidden;
+}
+.brand2{
+    background: pink url(./images/title.png) no-repeat;
+    height: 195px;
+    width: 290px;
+    text-indent: 290px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.brand3{
+    background: lime url(./images/title.png) no-repeat;
+    height: 195px;
+    width: 290px;
+    text-align: center;
+    line-height: 195px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+.brand3::after{
+    content:"";
+    position: absolute;
+    top: 0;
+
+}

@@ -374,7 +374,7 @@ body{
   border: 0;
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex; */
 }
 /* .container{
   display: flex;
@@ -417,7 +417,6 @@ input[type="search"]{
   margin: 0;
   font-weight: 400;
   font-size: 1em;
-  background: skyblue;
   position: absolute;
   top: 0;
 }
@@ -441,19 +440,16 @@ input[type="search"]{
   background: #fff;
 }
 .board ul{
-  background: pink;
   margin: 20px 0;
   padding: 45px 0 0 0;
   list-style: none;
 }
 .board li{
-  background: lime;
   margin: 8px 0;
   display: flex;
   /* justify-content: space-between; */
 }
 .board li a{
-  background: silver;
   width:270px;
   /* width: 100%; */
   white-space: nowrap;
@@ -461,12 +457,10 @@ input[type="search"]{
   text-overflow: ellipsis;
 }
 .board time{
-  background: orange;
   /* width: 130px; */
   margin-left: auto;
 }
 .board .more{
-  background: skyblue;
   position: absolute;
   top: 0;
   right: 0;
@@ -476,6 +470,68 @@ input[type="search"]{
 }
 /* 새소식 */
 .news{
+  margin-top: 20px;
+  position: relative;
+}
+.news::before{
+  content:"";
+  background: red linear-gradient(to right, #aaa, #fff);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+}
+.news-heading{
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ed8625;
+}
+.news-link{
+  display: block;
+}
+.news-article{
+  padding-left: 130px;
+  position: relative;
+  min-height: 105px;
+}
+
+.news-article-subject{
+  margin: 30px 0 0 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.news-article-date{
+  display: block;
+  margin: 5px 0 10px;
+}
+.news-article-brief{
+ margin: 0;
+ line-height: 1.5;
+
+}
+.news-article-thumbnail{
+  margin: 0;
+  position: absolute;
+  top: 3px;
+  left: 0;
+
+}
+.news-article-thumbnail img{
+  box-shadow: 0 15px 15px 0 #aaa;
+  
+}
+.news-article-thumbnail figcaption{
+  text-align: center;
+  margin-top: 15px;
+}
+.news-more{
+position: absolute;
+top: 0;
+right: 0;
+}
+
+/* .news{
   position: relative;
 }
 .news h2{
@@ -491,6 +547,7 @@ input[type="search"]{
 }
 .news-desc{
   margin-top: 20px;
+  text-align: justify;
 }
 .news img{
   box-shadow: 0 10px 10px 0 #666;
@@ -507,7 +564,13 @@ input[type="search"]{
 }
 .news-more::before{
     color: hsla(110,70%,20%,1);
-  }
+  } */
+
+/* 신규이벤트 및 관련사이트 */
+.graddient-box{
+  background: yellow;
+}
+
 .slogan{
   background-color: orange;
   padding: 15px 0;
